@@ -104,11 +104,11 @@
 <tr><th>Кількість CO2</th><th>Час приблизної стабілізації температури (tick)</th></tr>
 </thead>
 <tbody>
-<tr><td>0</td>1660<td></td></tr>
+<tr><td>0</td><td>1660</td></tr>
 <tr><td>4</td><td>3000</td></tr>
 <tr><td>8</td><td>3500</td></tr>
-<tr><td>12</td>4200<td></td></tr>
-<tr><td>16</td>6400<td></td></tr>
+<tr><td>12</td><td>4200</td></tr>
+<tr><td>16</td><td>6400</td></tr>
 <tr><td>20</td><td>8800</td></tr>
 </tbody>
 </table>

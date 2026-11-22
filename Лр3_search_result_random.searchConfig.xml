@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE search SYSTEM "behaviorsearch.dtd">
+<search>
+    <bsearchVersionNumber>1.10</bsearchVersionNumber>
+    <modelInfo>
+        <modelFile>C:\&#1061;&#1053;&#1059;&#1056;&#1045;\&#1052;&#1072;&#1075;\&#1082;&#1091;&#1088;&#1089; 6\1\&#1050;&#1057;&#1030;&#1052;\&#1051;&#1088;\models\&#1058;&#1086;&#1087;&#1086;&#1088;&#1077;&#1094;&#1100;_Climate Change.nlogox</modelFile>
+        <modelSetupCommands>setup-for-search</modelSetupCommands>
+        <modelStepCommands>go</modelStepCommands>
+        <modelStopCondition/>
+        <modelStepLimit>17280</modelStepLimit>
+        <modelMetricReporter>temperature</modelMetricReporter>
+        <modelMeasureIf>ticks &gt; 8640</modelMeasureIf>
+    </modelInfo>
+    <fitnessInfo>
+        <fitnessMinimized>false</fitnessMinimized>
+        <fitnessCollecting>MEAN_ACROSS_STEPS</fitnessCollecting>
+        <fitnessSamplingReplications>5</fitnessSamplingReplications>
+        <fitnessCombineReplications>MEAN</fitnessCombineReplications>
+    </fitnessInfo>
+    <searchSpace>
+        <paramSpec>["albedo" [0 0.05 1]]</paramSpec>
+        <paramSpec>["cloud-amount" [0 1 10]]</paramSpec>
+        <paramSpec>["sun-brightness" [0.2 0.2 2]]</paramSpec>
+        <paramSpec>["time-sunset" [15 0.01 20.99]]</paramSpec>
+        <paramSpec>["time-sunrise" [3 0.01 8.99]]</paramSpec>
+        <paramSpec>["co2-amount" [0 50 500]]</paramSpec>
+    </searchSpace>
+    <searchMethod type="RandomSearch"/>
+    <chromosomeRepresentation type="GrayBinaryChromosome"/>
+    <caching>true</caching>
+    <evaluationLimit>100</evaluationLimit>
+    <bestCheckingNumReplications>0</bestCheckingNumReplications>
+</search>
